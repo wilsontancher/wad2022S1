@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Sports DOM</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Triathlon</h1>
+    </header>
+    <section id="sports">
+        <p class="swim">Swim</p>
+        <p id="bike">Bike</p>
+        <p>Run</p>
+    </section>
+    <button class="addSportsBtn">Add new sport</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        //Write your answers here later   
+        console.log($("p"));
+            
+        console.log($("#sports").children());
+
+        var p1 = $("p")[0];
+        console.log($(p1).attr("class"));
+        
+        var p2 = $("p")[1];
+        $(p2).attr("id","para2");
+
+        var p3 = $("p")[2];
+        $(p3).addClass("running");
+
+        $(p1).text("Swimming");
+
+        console.log($(p3).text());
+
+        $(".title").css("color","red");
+
+        $(".addSportsBtn").click(function(){
+            $("#sports").append("<p>Badminton</p>");
+            $(".addSportsBtn").hide();
+        });      
+    </script>
+</body>
+</html>
