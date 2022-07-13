@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5bfe103b8604e341e41c06b5"},"roomNumber":{"$numberInt":"5002"},"price":"$80","type":"Double","size":{"$numberInt":"72"}}
+{"_id":{"$oid":"5bfe10c82b2c4341e4e7b3fe"},"roomNumber":{"$numberInt":"6033"},"price":"$80","type":"Double","size":{"$numberInt":"72"}}
+{"_id":{"$oid":"5bfe10da2b2c4341e4e7b3ff"},"roomNumber":{"$numberInt":"3025"},"price":"$100","type":"Superior","size":{"$numberInt":"110"}}
+{"_id":{"$oid":"5bfe10ee2b2c4341e4e7b400"},"roomNumber":{"$numberInt":"6024"},"price":"$70","type":"Single","size":{"$numberInt":"65"}}
