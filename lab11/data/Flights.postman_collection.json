@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "ac5ba0cd-d44c-4616-b1f4-29a7232e3acd",
+		"name": "Flights",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Flight",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "flightNumber",
+							"value": "AK308",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "Singapore",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "Taiwan",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "4500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all flights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/flights/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get flights by destination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/flights/destination/Bangkok",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights",
+						"destination",
+						"Bangkok"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get flight by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/flights/5c00e6bd7807ee49a4f5c221",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights",
+						"5c00e6bd7807ee49a4f5c221"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update flight",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "flightNumber",
+							"value": "AK388",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "Singapore",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "USA",
+							"type": "text"
+						},
+						{
+							"key": "distance",
+							"value": "14000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/flights/5c00e2e832494835ec0cbbe2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights",
+						"5c00e2e832494835ec0cbbe2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete flights from Singapore",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/flights/source/Singapore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights",
+						"source",
+						"Singapore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all flights",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/flights/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"flights",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

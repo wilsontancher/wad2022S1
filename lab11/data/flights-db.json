@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5b2b3eb79a27700c54ddc9e3"},"flightNumber":"BK235","source":"Singapore","destination":"Bangkok","distance":{"$numberInt":"2300"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5b2b3ed99a27700c54ddc9e4"},"flightNumber":"AK308","source":"Singapore","destination":"Taiwan","distance":{"$numberInt":"4500"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5b2b3eeb9a27700c54ddc9e5"},"flightNumber":"JT109","source":"Japan","destination":"Singapore","distance":{"$numberInt":"6700"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5b2b3f0f9a27700c54ddc9e6"},"flightNumber":"TW339","source":"Taiwan","destination":"Bangkok","distance":{"$numberInt":"3200"},"__v":{"$numberInt":"0"}}
